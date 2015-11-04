@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+.button {
+    background: #ccc url(image-animation.png) no-repeat 0 0;;
+    background-size:2900%;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.button:hover {background-position: right;}
+
+@-webkit-keyframes animatingElement {
+    0% {background-position: left;}
+	100% {background-position: right;}
+}
+
+@keyframes animatingElement {
+    0% {background-position: left;}
+   100% {background-position: right;}
+}
+
+.animation {
+    background-position: right;
+    display: inline-block;
+    -webkit-animation-name: animatingElement;
+    animation-name: animatingElement;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: steps(28);
+    animation-timing-function: steps(28);        
+}
