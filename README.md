@@ -1,7 +1,7 @@
 # Effect animated in the click of a button
 
-[![licence mit](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/resource-solutions/resource-click-animated/blob/master/LICENSE.md)
-[![issues](https://img.shields.io/github/issues/resource-solutions/resource-click-animated.svg)](https://github.com/resource-solutions/resource-click-animated/issues)
+[![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
+[![issues](https://img.shields.io/github/issues/resource-solutions/resource-click-animated.svg?style=flat-square)](https://github.com/resource-solutions/resource-click-animated/issues)
 
 ## Contributing
 
