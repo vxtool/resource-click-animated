@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "mocha tests/scriptsTest.js"
-  },
   "scripts": {
-    "test": ""
+    "test": "mocha tests/scriptsTest.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +17,7 @@
   },
   "homepage": "https://github.com/resource-solutions/resource-click-animated#readme",
   "devDependencies": {
+    "jsdom": "^9.6.0",
     "mocha": "^3.1.2"
   }
 }
