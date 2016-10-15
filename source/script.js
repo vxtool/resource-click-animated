@@ -1,33 +1,27 @@
 (function() {
+  var $body = document.body;
+  var $button = $body.getElementsByClassName('button')[0];
 
-    var $body = document.body;
-    var $button = $body.getElementsByClassName('button')[0];
+  var toggleClass: function(element, className) {
+    if (element.classList) {
+      element.classList.toggle(className);
+    } else {
+      var classes = element.className.split(' ');
+      var existingIndex = classes.indexOf(className);
 
-    var element = {
-        hasClass: function (el, className) {
-            if (el.classList) { return el.classList.contains(className); }
-            else { return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className); }
-        },
-        addClass: function (el, className) {
-            if(el.classList) { el.classList.add(className); }
-            else { el.className += ' ' + className; }
-        },
-        removeClass: function (el, className) {
-            if(el.classList){ el.classList.remove(className); } 
-            else { el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' '); }
-        }
+      if (existingIndex >= 0) {
+        classes.splice(existingIndex, 1);
+      }
+      else {
+        classes.push(className);
+      }
+
+      element.className = classes.join(' ');
     }
+  };
 
-    var animation = function () {
-        var el = $button;
-        var className = 'animation';
+  if ($button) {
+    $button.addEventListener('click', toggleClass($button, 'animation'));
+  }
 
-        if(element.hasClass(el, className)) { element.removeClass(el, className); }
-        else { element.addClass(el, className); }            
-    }
-
-    if ( typeof $button !== 'undefined' ) {
-        $button.addEventListener('click', animation);
-    }
-
-}).call(this);
+})();
