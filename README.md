@@ -1,7 +1,12 @@
 # Effect animated in the click of a button
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![issues](https://img.shields.io/github/issues/resource-solutions/resource-click-animated.svg?style=flat-square)](https://github.com/resource-solutions/resource-click-animated/issues)
+[![GitHub issues](https://img.shields.io/github/issues/org-victorinox/resource-click-animated.svg)](https://github.com/org-victorinox/resource-click-animated/issues)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/org-victorinox/resource-click-animated.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/org-victorinox/resource-click-animated.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/org-victorinox/resource-click-animated.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/org-victorinox/resource-click-animated.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/org-victorinox/resource-click-animated/total.svg)
 
 ```bash 
 npm test
@@ -18,7 +23,7 @@ npm test
 
 ## Log
 
-Check [Releases](https://github.com/resource-solutions/resource-click-animated/releases) for detailed changelog.
+Check [Releases](https://github.com/org-victorinox/resource-click-animated/releases) for detailed changelog.
 
 ## License
 
